@@ -1,0 +1,18 @@
+html:
+
+<hr width="0.5%" size="1390" class="white1" />
+<hr width="0.5%" size="1390" class="white2" />
+
+
+css:
+
+.white1
+{
+    float:right;
+    background-color:Black;
+}
+.white2
+{
+    float:left;
+    background-color:Black;
+}

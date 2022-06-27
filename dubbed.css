@@ -1,0 +1,183 @@
+﻿body 
+{
+   background-attachment:fixed;
+    background-repeat:no-repeat; 
+}
+
+div.title
+{
+    background-color:#bf4040;
+    border-radius:40px;
+    margin-left:100px;
+    margin-right:100px;
+    border:0.5px solid black;
+}
+
+
+.homepage /*גודל כותרת על 100 וגופן סקולר*/
+ {
+    font-size:60;
+    font-family:Guttman Hatzvi;
+    color:white;
+   text-shadow:-3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+ 
+ img.titleright
+{
+    border-radius:10px;
+    box-shadow: 2px 2px 10px grey;
+    margin-top:20px;
+    margin-right:20px;
+}
+
+img.titleleft
+{
+    border-radius:10px;
+    box-shadow: -2px 2px 10px grey;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+ ul {
+    list-style-type:none;
+    overflow: hidden;
+    background-color:#1a53ff;
+    width:94%;
+    border:1.5px solid #004466;
+    padding:1px;   
+}
+ 
+ 
+h2
+{
+    text-shadow:2px 2px 5px grey;
+
+}
+
+li {
+    float: right;
+    border-left:1px solid #00b3b3;
+    font-size: 13px;
+    
+         
+}
+
+li:last-child {
+    border-left:none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+     transition: 0.4s;
+    
+}
+
+li a:hover:not(.active) {
+    background-color: #0d3d6e;
+    
+}
+
+.active {
+    background-color: #002447;
+}
+
+
+.misgeret 
+{
+    background:url("8dubbed/white.jpg");
+    border: 4px outset tomato;
+    padding:10px;
+    overflow:hidden; 
+
+}
+
+
+.text
+{
+    margin-right:110px;
+    margin-left:240px;
+    line-height:1.3;
+}
+.up
+{
+    margin-right:110px;
+    background:url("8dubbed/white.jpg");
+    border-top-left-radius:25px;
+     border-bottom-right-radius:25px;
+     border:0.2px outset black;
+    padding:10px; 
+    box-shadow:2px 2px 5px grey;
+    text-shadow:2px 2px 5px grey;
+    
+    }
+    
+
+hr
+{
+    border-radius:10px;
+}
+
+img.leftpic
+{
+    margin-left:70px;
+    border:2px solid #0d0d0d ;
+    border-radius:3px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid 	#F0F8FF;
+    background:	#4682B4;
+
+}
+
+.pagination a.active {
+    background-color: #0b275b;
+    color: white;
+    border: 1px solid #0b275b;
+}
+
+.pagination a:hover:not(.active) 
+{
+    background-color: #ddd;
+    }
+
+.pagination a:last-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:first-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.mark
+{
+    background-color:#ff4d4d;
+}
+
+div.monolo 
+{
+    background:	#F5FFFA;
+    margin-right:70px;
+    margin-left:100px;
+    font-size:20px;
+    width:420px;
+    text-align:center;
+    border-left:2px solid #7B68EE;
+    border-right:2px solid #7B68EE;
+    padding:3px;
+}

@@ -1,0 +1,211 @@
+﻿body /*רקע ותמונה נגללת*/
+{
+    
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
+ div.title
+{
+    background: radial-gradient( circle,#f2f200, #ffc34d);
+    border-radius:40px;
+    margin-left:10%;
+    margin-right:10%;
+    border:0.5px solid black;
+}   
+
+
+.homepage /*גודל כותרת על 100 וגופן סקולר*/
+ {
+    font-size:60;
+    font-family:Guttman Hatzvi;
+    color:white;
+   text-shadow:-3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+ul {
+    list-style-type:none;
+    overflow: hidden;
+    background-color:#1a53ff;
+    width:94%;
+    border:1.5px solid #004466;
+    padding:1px;
+    
+ 
+    
+}
+
+li {
+    float: right;
+    border-left:1px solid #00b3b3;
+    font-size: 13px;
+    
+    
+         
+}
+
+li:last-child {
+    border-left:none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: 0.4s;
+    
+}
+
+li a:hover:not(.active) {
+    background-color: #0d3d6e;
+    
+}
+
+.active {
+    background-color: #002447;
+}
+
+
+
+.text 
+{
+    margin-right:100px;
+    margin-left:260px;
+    line-height:1.3;
+}
+
+.text1
+{
+    margin-right:100px;
+    margin-left:200px;
+    line-height:1.3;
+}
+.misgeret 
+{
+    background:url("3morty/white.jpg");
+    border-radius:10px;
+    overflow:hidden;
+    border: 4px outset #ffb366;
+    padding:10px;
+}
+
+img.mor
+{
+    margin: 0 4%;
+    box-shadow:-3px 3px 5px #595959;
+}
+
+
+img.titleright
+{
+    border-radius:10px;
+    box-shadow: 2px 2px 5px grey;
+    margin-top:20px;
+    margin-right:20px;
+}
+
+img.titleleft
+{
+    border-radius:10px;
+    box-shadow: -2px 2px 5px grey;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+h2
+{
+    text-shadow:2px 2px 5px grey;
+}
+hr 
+{
+    border-radius:3px;
+}
+
+img.mor2
+{
+    margin-left:40px;
+    border:3px inset #8080ff;
+   border-bottom-right-radius:2px;
+    border-top-right-radius:50px;
+     border-top-left-radius:5px;
+     border-bottom-left-radius:15px;
+}
+
+
+img.mor3
+{
+    border:1px inset black;
+    border-radius:10px;
+    margin-bottom:10px;
+    box-shadow:5px 5px 10px grey;
+}
+
+img.mor4
+{
+      margin-right:40px;
+    border:3px solid #75a3a3;
+    border-radius:10px;
+}
+    
+img.mor5
+{
+    float:left;
+    border:3px double #75a3a3;
+    border-radius:10px;
+}
+
+.number {
+    display: inline-block;
+}
+
+.number a {
+    color: black;
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid 	#F0F8FF;
+    background:	#4682B4;
+
+}
+
+.number a.active {
+    background-color: #0b275b;
+    color: white;
+    border: 1px solid #0b275b;
+}
+
+.number a:hover:not(.active) 
+{
+    background-color: #ddd;
+    }
+
+.number a:last-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.number a:first-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mark
+{
+    background-color:#ffff80;
+    width:100%;
+    height:auto;
+}
+
+div.monolo 
+{
+    background:	#F5FFFA;
+    margin-right:70px;
+    margin-left:100px;
+    font-size:20px;
+    width:420px;
+    text-align:center;
+    border-left:2px solid #7B68EE;
+    border-right:2px solid #7B68EE;
+    padding:3px;
+}

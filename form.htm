@@ -1,0 +1,1028 @@
+﻿<html>
+<head>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+   <title>הרשמה לאתר מעריצים</title>
+    <link rel="icon" type="image/png" href="10form/icon.png" /> 
+</head>
+<body dir="rtl" background="10form/back.jpg" />
+
+
+<audio id="rate">
+    <source src="10form/rate.mp3" type="audio/mp3">
+</audio>
+
+<audio id="reset">
+    <source src="10form/reset.mp3" type="audio/mp3">
+</audio>
+
+<audio id="myAudio">
+    <source src="10form/tweet1.mp3" type="audio/mp3">
+</audio>
+
+<audio id="myAudioExit">
+    <source src="10form/exit.mp3" type="audio/mp3">
+</audio>
+
+<audio id="subme">
+    <source src="10form/sub.mp3" type="audio/mp3">
+</audio>
+
+<audio id="wrong">
+    <source src="10form/wrong.mp3" type="audio/mp3">
+</audio>
+
+<audio id="tada">
+    <source src="10form/tada.mp3" type="audio/mp3">
+</audio>
+
+        
+        <center>
+ <div class="title">
+    <img src="10form/title1.png" width="200" height="120" align="right" class="titleright"/>
+            <img src="10form/title2.jpg" width="200" height="120" align="left" class="titleleft"/>
+           <h1 class="homepage">הרשמה לאתר</h1></div>
+    <br /> <br />
+     <b><font face="Guttman Hatzvi" size="1">
+        <ul> 
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/homepage.htm">ריק ומורטי</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/rick.htm" >ריק סנצ'ז</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/morty.htm">  מורטי סמית'</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/jerry.htm">ג'רי סמית'</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/beth.htm" > בת' סמית'</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/characthers.htm">דמויות משניות  </a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/comicspops.htm">קומיקס ופופים</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/dubbed.htm">מדובבים</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/appgame.htm" > משחק אפליקציה</a></li>
+            <li class="menu"><a target="_blank" href="http://localhost:64340/rickandmorty/form.htm" class="active"> הרשמה לאתר מעריצים </a></li>
+        </ul>
+    </font>
+ </b>
+   </center>
+   <br /><br />
+    <font face="guttman hatzvi">
+   <div class="box text">
+   <h1><center><b>הרשמה לאתר מעריצים</b></center></h1>
+   <br />
+   <font face="narkisim">
+   <img src="10form/rickandmorty1.png" class="rickandmorty" width="200" height="120" align="left"/>
+   הרשמו עוד היום לאתר המעריצים הגדול והמפורסם ביותר של "ריק ומורטי"! <br />הרשמו לאתר על מנת לקבל <b><i>עדכונים חמים בנוגע לסדרה, גילויי תיאוריות, משחקים ,איטסר אגס ועוד!</i></b> 
+   <br /><br /><b><font size="3">*יש לך כבר משתמש? לחץ על היכנס כדי להתחבר</font></b>
+   </font>
+
+
+<button type="button" class="signin" onclick="signin()">היכנס</button>
+   
+  </div>
+
+   <div class="opacity" id="grey"> 
+   
+<div class="form">
+	
+  <b><span class="close" onclick="exitSignup()">&times</span></b>
+	
+<center>
+<img src="10form/star.png" width="30"height="30" align="left" class="star1"/>
+<img src="10form/star.png" width="30"height="30" align="right" class="star2"/>
+<u><h1><font color="#000e0e">היכנס לאתר</font></h1></u>
+<hr width="80%" color="black" size="1" />
+</center>
+<br />
+<img src="10form/rick1.jpg" heigth="100" width="150" align="left" class="rickpic"/>
+<br />
+<font face="narkisim" size="4" color="#1a1a1a">
+
+
+<b>שם משתמש:</b>
+<br />
+<form>
+<input type="text"  placeholder="הזן שם משתמש " maxlength="15" class="kelet"/>
+<br /><br />
+<b>דואר אלקטרוני:</b>
+<br />
+<input type="text" placeholder="הזן דואר אלקטרוני " maxlength="30" class="kelet" />
+<img src="10form/rick3.jpg" heigth="100" width="150" align="left" class="rickpic"/><br /><br />
+<b>סיסמא:</b>
+<br />
+<input type="password" placeholder="הזן סיסמא" class="pass"maxlength="15" id="pass"/>
+
+
+<button  type="button" onclick="show()" id="name" class="showed">הצג</button>
+<br /><br />
+<input type="checkbox" name="chek" style="cursor:pointer;"/>
+<b>זכור שם משתמש</b>
+<br />
+<input type="checkbox" name="chek" style="cursor:pointer; margin-top:10px;"/>
+<b>זכור סיסמא</b>
+<br /><br />
+<hr width="80%" color="black" size="1" />
+<br />
+<center>
+
+
+<input type="submit" value="שלח" class="submit" onclick="sub()"/>
+
+
+<input type="reset" value="נקה" class="naka" />
+</form>
+</center>
+
+</font>
+</div>
+</div> 
+
+ <div class="box2 text">
+<br />
+<ins><span style="font-size:40px; text-align:center; margin:0 30% auto;"<b>טופס ההרשמה</b></span></ins>
+
+
+<font size="3">
+
+<br /><br /><b>שם משתמש:</b><br />
+<form>
+<input type="text" class="kelet1" maxlength="15" placeholder="הזן שם משתמש" /><img src="10form/qa.png" width="20" height="20"  class="qa"  onmouseover="big()" onmouseout="small()" />
+
+<span class="qabox" id="boo">
+<font size="2"><b>שם משתמש</b></font><br /><font face="narkisim" size="1">
+הזן את שם המשתמש שלך באתר,<br />בעזרתו אנשים יוכלו לזהות אותך</font>
+</span>
+<img src="10form/scroll1.jpg" width="150" height="200" align="left" class="rick" />
+ <br />
+ <br /><br /><b>סיסמא:</b><br />
+<input type="password" class="pass1" maxlength="15" id="pass1" placeholder="הזן סיסמא" />
+
+<button  type="button" onclick="show1()" id="name1" class="showed">הצג</button><img src="10form/qa.png" width="20" height="20"  class="qa"  onmouseover="big1()" onmouseout="small1()" />
+<span class="qabox" id="boo1">
+<font size="2"><b>סיסמא</b></font><br /><font face="narkisim" size="1">
+הזן את הסיסמא הרצויה שלך למשתמש, <br />בעזרתה תוכל להכנס לחשבון הפרטי שלך</font>
+</span>
+ <br />
+
+
+  <br /><br /><b>דואר אלקטרוני:</b><br />
+<input type="text" class="pass1" id="pass2" maxlength="30" placeholder="הזן דואר אלקטרוני" />
+<img src="10form/qa.png" width="20" height="20"  class="qa"  onmouseover="big2()" onmouseout="small2()" />
+<span class="qabox" id="boo2">
+<font size="2"><b>דואר אלקטרוני</b></font><br /><font face="narkisim" size="1">
+עליך לכתוב את הדואר האלקטרוני שלך <br />על מנת שתקבל התראות ישירות אליו </font>
+</span>
+
+ <br /> 
+ <br />
+  <br />
+<div class="misgeret">
+<b>בחר מין:</b><img id="gender" src="10form/unknown.png" width="35" height="35" hspace="10" />
+ <br />
+  זכר<input type="radio" name="gender" style="margin:10px 10px; cursor:pointer;" onclick="male()"/>
+ נקבה<input type="radio" name="gender" style="margin:16px 10px; cursor:pointer;" onclick="female()"/>
+ אחר<input type="radio" name="gender" style="margin:16px 10px; cursor:pointer;" onclick="other()" />
+</div>
+
+<img src="10form/scroll5.jpg" width="150" height="200" align="left" class="rick" />
+
+
+<br /><br />
+<div class="misgeret">
+<b>תאריך לידה:</b><font size="2"> (במספרים)</font><br /><br />
+יום:<input type="text"  maxlength="2" class="date" />
+חודש:<input type="text" maxlength="2" class="date" />
+שנה:<input type="text"  maxlength="4" class="date" />
+</div>
+<br />
+<br />
+<div class="misgeret">
+כתוב את הקוד כאן כדי לאשר שאתה לא רובוט:<sub class="must">(ללא רווחים)</sub><br /><br />
+ <input type="text" id="myInput" style="border:0.5px solid black;" />
+<img src="10form/code.gif" width="200" hspace="30" style="border:2px outset #75a3a3;float:left;" />
+<br><br>
+<button  type="button" onclick="code()"  class="robot" style="background-color:#446CB3;">שלח</button>
+
+
+</div>
+<img src="10form/scroll3.jpg" width="150" height="200" align="left" class="rick" vspace="20"/>
+<div class="opacity" id="pri">
+
+<div class="priform">
+  <b><span class="closepri" onclick="exitPrivate()">&times</span></b>
+     </span>
+<center>
+<img src="10form/star.png" width="30" height="30" align="left" class="star1"/>
+<img src="10form/star.png" width="30" height="30" align="right" class="star2"/>
+<u><h1><font  color="#000e0e">תקנון האתר</font></h1></u>
+<hr width="80%" color="black" size="1" />
+</center>
+<br /> 
+<p style="margin:0 20px; font-family:Narkisim;">
+
+-מטעמי נוחות נוקט התקנון בלשון זכר, ואולם כל הנאמר בו מתייחס לנשים ולגברים כאחד. 
+<br />
+<ol style="font-family:Narkisim;">
+<li>השימוש באתר על תכניו והשירותים הניתנים בו, מוצעים לך בכפוף לקבלתך את כל התנאים הכלולים בתקנון זה.</li>
+<li>הגלישה באתר ו/או הרשמתך כמנוי לקבלת שירותיו, ייחשבו להסכמה מצדך לתנאים אלה.</li>
+<li>הנהלת האתר רשאית להשעות, לחסום או להפסיק לאלתר את גישת הגולש לשירות אם יפר את תנאי התקנון.</li>
+<li>הנהלת האתר רשאית לעדכן את תנאי התקנון מעת לעת.</li>
+<li>אין לעשות באתר או באמצעותו כל שימוש למטרות בלתי חוקיות.</li>
+<li>אין לרשום אדם אחר שלא בהסכמתו ו/או ללא נוכחותו מול המסך בשעת הרישום ולאחר שהוסברו לו כל תנאי תקנון זה.</li>
+<li>הרישום באתר הוא לשימוש האישי והבלעדי של הגולש אשר אינו רשאי להעביר את הרשאת השימוש לאדם אחר כלשהו. חובה מיוחדת לדייק לחלוטין בכל הפרטים האישיים הנדרשים לצורך הרישום ולצורך הקשר השוטף עם המנוי.</li>
+<li>הנך אחראי באופן בלעדי לנכונות המידע אותו תפרסם או תעביר באמצעות האתר. הנהלת האתר אינה מקבלת על עצמה כל אחריות לתכנים המפורסמים או מועברים בין המנויים.</li>
+<li>הנך מצהיר כי ידוע לך שלהנהלת האתר אין כל יכולת או אפשרות לבדוק, לנפות או לסנן את המנויים הנרשמים לאתר.</li>
+<b><li>כל הזכויות שמורות ל"אייל בניית אתרים בע"מ"</li></b>
+</ol>
+</p>
+</div>
+</div>
+
+
+
+<br /><br /><br />
+<b>אנא אשר את הבקשות הבאות:</b><br /><br />
+<input type="checkbox" class="cek" name="finish"  />אני מאשר/ת שקראתי את <span onclick="private()" class="private">התנאים וההגבלות של התקנון.</span><br />
+<input type="checkbox" class="cek" name="finish"/>אני מעוניין/ת שהאתר ישלח לי עדכונים לכתובת האימייל שלי.<br />
+<input type="checkbox" class="cek" name="finish" />אני מעוניין/ת שהאתר ישלח לי תזכורות לבקר בו מדי פעם.
+<br /><br />
+<center>
+<input type="submit" value="הרשם" class="submit" onclick="sub()"/>
+<input type="reset" value="נקה" class="naka" />
+</center>
+</form>
+<br />
+<hr color="black" align="center" width="85%" size="2" />
+
+<center>
+<br />
+אהבת את האתר? דרג אותו!
+<br /><br />
+
+<button type="button" class="starstyle" onclick="star5()"><b>5</b></button>
+<button type="button" class="starstyle" onclick="star4()"><b>4</b></button>
+<button type="button" class="starstyle" onclick="star3()"><b>3</b></button>
+<button type="button" class="starstyle" onclick="star2()"><b>2</b></button>
+<button type="button" class="starstyle" onclick="star1()"><b>1</b></button>
+
+<br /><br />
+<img src="10form/stars0.png" style="width:200px;" id="star"/>
+
+<br /><br />
+<button class="submit" onclick="alert('תודה על הדירוג!')">שלח</button>
+
+<button type="button" class="naka" onclick="star0()">אפס כוכבים</button>
+</center>
+<br />
+<hr color="black" align="center" width="85%" size="2" />
+<br />
+</font>
+ </div>
+
+<br /><br />
+
+
+ <div id="closegalgal"> 
+
+
+<center>
+<div class="misgeret">
+
+לאחר שעצרתם את הגלגל<b>, לחצו</b> על סימן השאלה (?) שמתחת לחץ האדום - ותזכו בפרס!  
+</div>
+<br /><br />
+<button class="robot" type="button" onclick="stopThis()">עצור</button> 
+<img src="10form/ar.jpg" width="70" height="120" />
+<button class="robot" type="button" onclick="keepThis()">המשך</button>
+</center>
+
+ 
+  
+  <div style="width:100%; background:#F03434;">
+  <hr color="#96281B" size="4" width="100%" />
+ <marquee id="stopMe" scrollamount="200" width="100%" behavior="scroll" loop="infinite >
+
+         <input type="image" src="10form/ar.png"/>
+
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon1()"/>
+
+      
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon2()"/>
+
+     
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon3()"/>
+
+
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon4()"/>
+     
+ 
+          <input type="image" src="10form/question.png"width="100" height="56" onclick="youWon5()"/>
+
+          
+ 
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon1()"/>
+
+       
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon2()"/>
+
+       <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon3()"/></span>
+
+
+       <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon4()"/>
+
+          <input type="image" src="10form/question.png" width="100" height="56" onclick="youWon5()"/>
+
+
+        </marquee>
+         <hr color="#96281B" size="4" width="100%" />
+        </div>
+        
+        
+        
+     
+       
+       
+       
+       </div>
+
+
+
+
+
+       
+<div class="grey" id="pine">
+
+<div class="prize">
+
+<b><span class="close" onclick="document.getElementById('pine').style.display='none'">&times</span></b>
+
+<center>
+<h1><u>זכית ב...</u><br /></h1>
+<font face="narkisim" size="5">
+קופסת שימורי אננס!
+<br /><br />
+<img src="10form/pine.png" width="170" height="100" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+
+<button class="submit" onclick="takeThePrize1()"><b>אסוף פרס</b></button>
+</font>
+</center>
+
+</div>
+
+</div>
+
+
+<div class="grey" id="fly">
+
+<div class="prize">
+
+<b><span class="close" onclick="document.getElementById('fly').style.display='none'">&times</span></b>
+
+<center>
+<h1><u>זכית ב...</u><br /></h1>
+<font face="narkisim" size="5">
+זוג כרטיסים לסרט!
+<br /><br />
+<img src="10form/fly.png" width="90" height="110" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+
+<button class="submit" onclick="takeThePrize2()"><b>אסוף פרס</b></button></font>
+
+</center>
+
+</div>
+
+</div>
+
+
+<div class="grey" id="pop">
+
+<div class="prize">
+
+<b><span class="close" onclick="document.getElementById('pop').style.display='none'">&times</span></b>
+
+<center>
+<h1><u>זכית ב...</u><br /></h1>
+<font face="narkisim" size="5">
+פופ של ריק!
+<br /><br />
+<img src="10form/pop.png" width="200" height="110" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+
+<button class="submit" onclick="takeThePrize3()"><b>אסוף פרס</b></button></font>
+
+</center>
+
+</div>
+
+</div>
+
+
+<div class="grey" id="money">
+
+<div class="prize">
+
+<b><span class="close" onclick="document.getElementById('money').style.display='none'">&times</span></b>
+
+<center>
+<h1><u>זכית ב...</u><br /></h1>
+<font face="narkisim" size="5">
+1,000 ש"ח לבזבוזים!
+<br /><br />
+<img src="10form/money1.png" width="130" height="70" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+
+<button class="submit" onclick="takeThePrize4()"><b>אסוף פרס</b></button></font>
+</center>
+
+</div>
+
+</div>
+
+
+<div class="grey" id="heli">
+
+<div class="prize">
+
+<b><span class="close" onclick="document.getElementById('heli').style.display='none'">&times</span></b>
+
+<center>
+<h1><u>זכית ב...</u><br /></h1>
+<font face="narkisim" size="5">
+רחפן משוכלל!
+<br /><br />
+<img src="10form/halikopter.png" width="160" height="100" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+
+<button class="submit" onclick="takeThePrize5()"><b>אסוף פרס</b></button></font>
+
+</center>
+
+</div>
+
+
+</div>
+
+<center>
+<br /><br /><div class="border"></div><br /><br />
+<div class="noti" >כדי להביע את דעתכם על האתר שלנו וכדי לשאול אותנו שאלות בנוגע לסדרה - כתבו לנו באזור התגובות !<br />הזינו את הכינוי ותמונת פרופיל שלכם ושניהם יופיעו כפרטיי המשתמש שלכם מעל התגובה שלכם.
+</div> 
+<br /><br /><br />
+
+
+<div class="misgeret">
+<b>הזן כינוי:</b>
+<br />
+<input type="text" maxlength="10" size="10" id="cinoy" style="margin-top:5px;"/>
+<br />
+</div>
+<br /><br />
+<div class="misgeret">
+<b>בחר תמונת פרופיל</b><br /><br />
+<img src="10form/ninja.png" width="40" height="40" hspace="5" class="click" onclick="ninja()"/>
+<img src="10form/god.png" width="40" height="40" hspace="5" class="click" onclick="god()"/>
+<img src="10form/alien.png" width="40" height="40" hspace="5" class="click" onclick="alien()"/>
+<img src="10form/dog.png" width="40" height="40" hspace="5" class="click" onclick="dog()"/>
+<img src="10form/clown.png" width="40" height="40" hspace="5" class="click" onclick="clown()"/>
+<img src="10form/heart.png" width="40" height="40" hspace="5" class="click" onclick="heart()"/>
+<img src="10form/boy.png" width="40" height="40" hspace="5" class="click" onclick="boy()"/>
+<img src="10form/girl.png" width="40" height="40" hspace="5" class="click" onclick="girl()"/>
+<img src="10form/gamer.png" width="40" height="40" hspace="5" class="click" onclick="gamer()"/>
+<br /><br />
+
+<img src="10form/unknown.png" id="yourImage" width="40" height="40" style="margin-bottom:10px; box-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"/>
+
+</div>
+
+<br />
+<br />
+
+
+
+
+<br />
+<b>כתוב תגובה כאן:</b><br />
+<textarea rows="3" cols="67" maxlengt="60" id="area" style="resize:none;"></textarea>
+<br />
+<button type="button" class="robot" id="disappear" onclick="userName()">הגב</button>
+<br /><br /><br /><br />
+
+
+</center>
+
+
+
+
+
+
+
+
+
+<div class="mes">
+<div class="block" id="comment" style="display:none;">
+<div class="user">
+<img  id="profile" width="40" height="40"/>
+
+<span style=" vertical-align:10px; margin-left:4px; margin-right:3px;"><b><span id="username"></span></b></span>
+</div>
+
+<br /><br />
+
+<div id="yourComment" class="write"> </div>
+
+<table cellpadding="4" style="margin-right:88%;">
+
+<tr>
+<td><img class="love" id="love" src="10form/like.png" width="20" height="20" onclick="like()" style="margin-bottom:13px;"/></td>
+<td > <img class="hate" id="hate" src="10form/dislike.png" width="20" height="20"  onclick="dislike()"/> </td>
+  
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="block">
+<div class="user">
+<img src="10form/pro1.png" width="40" height="40"/>
+
+<span style=" vertical-align:10px; margin-left:4px; margin-right:3px;"><b>domoro77</b></span>
+</div>
+
+<br /><br />
+
+<div  class="write">לא עובדת לי הסיסמא והשם משתמש. הכנסתי אותם ולחצתי "שלח" אבל לא קרה כלום ): <br />נ.ב  - אהבתי את האתר שלכם  ממש ,ואני מקווה שתצליח בו מאוד בעתיד!</div>
+
+
+<table cellpadding="4" style="margin-right:88%;">
+
+<tr>
+<td><img class="love" id="love2"  src="10form/like.png" width="20" height="20" onclick="like2()" style="margin-bottom:13px;"/></td>
+<td > <img class="hate" id="hate2"  src="10form/dislike.png" width="20" height="20"  onclick="dislike2()"/></td>
+  
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="block">
+<div class="user">
+<img src="10form/bomb.png" width="40" height="40"/>
+
+
+<span style=" vertical-align:10px; margin-left:4px; margin-right:3px;"><b>yarin123</b></span>
+</div>
+
+<br /><br />
+
+<div  class="write">אני ממש אוהב את זה שיש אתר מעריצים לסדרה האהובה עלי ביותר.<br /> אני ממש ממש רוצה שתפתחו עוד אתרים כאלו ותעלו עוד מידע ודברים מגניבים על הסדרה! :)</div>
+
+<table cellpadding="4" style="margin-right:88%;">
+
+<tr>
+<td><img class="love" id="love3"  src="10form/like.png" width="20" height="20" onclick="like3()" style="margin-bottom:13px;"/></td>
+<td > <img class="hate" id="hate3"  src="10form/dislike.png" width="20" height="20"  onclick="dislike3()"/> </td>
+  
+
+</tr>
+
+</table>
+</div>
+
+
+
+<div class="block">
+<div class="user">
+<img src="10form/cup.png" width="40" height="40"/>
+
+
+<span style="vertical-align:10px; margin-left:4px; margin-right:3px;"><b>tikoliko</b></span>
+</div>
+
+<br /><br />
+
+<div  class="write">האתר מדהים! העיצוב מעולה!  אני עדיין לא מאמין שזכיתי בבובת פופ של ריק ומורטי. <br />לדעתי חסרים לכם כמה פרטים במידע שאתם מעירים אז אני ממליץ לכם לחקור לעומק לפני שאתם מעלים מידע...</div>
+
+<table cellpadding="4" style="margin-right:88%;">
+
+<tr>
+<td><span onclick=" changelike4()"><img class="love" id="love4"  src="10form/like.png" width="20" height="20" onclick="like4()" style="margin-bottom:13px;"/></span></td>
+<td ><span onclick=" changedislike4()"> <img class="hate" id="hate4"  src="10form/dislike.png" width="20" height="20"  onclick="dislike4()"/></span> </td>
+  
+
+</tr>
+
+</table>
+
+</div>
+
+
+</div></font>
+<br /><br />
+<center>
+     <font face="narkisim"><a href="#top"><img src="10form/up.gif" width="200" align="center" style="margin-left:30px;"/></a><br />
+    <b><div class="monolo" ><a href="#top">חזרה לתחילת הדף </a></div></b> 
+     
+     
+      </font>
+
+
+     <br /><br />
+     <font face="guttman yad-brush" size="4">
+     <div class="number">
+        <a href="http://localhost:64340/rickandmorty/appgame.htm">&laquo;</a>
+        <a href="http://localhost:64340/rickandmorty/homepage.htm">1</a>
+        <a href="http://localhost:64340/rickandmorty/rick.htm" >2</a>
+        <a href="http://localhost:64340/rickandmorty/morty.htm">3</a>
+        <a href="http://localhost:64340/rickandmorty/jerry.htm">4</a>
+        <a href="http://localhost:64340/rickandmorty/beth.htm ">5</a>
+        <a href="http://localhost:64340/rickandmorty/characthers.htm">6</a>
+        <a href="http://localhost:64340/rickandmorty/comicspops.htm">7</a>
+        <a href="http://localhost:64340/rickandmorty/dubbed.htm">8</a>
+        <a href="http://localhost:64340/rickandmorty/appgame.htm">9</a>
+        <a href="#">10</a>
+        <a class="active href="#">&raquo;</a>
+    </div>
+    </font>
+
+    <br /><br /><br />
+    <div class="mark">
+        <hr align="center"  width="100%" size="4" color="#3d5c5c"/>
+        
+        <marquee width="100%" behavior="scroll" loop="infinite>
+            <img src="10form/לא עובד.jpg" width="187" height="102" />
+            <img src="10form/pic22.jpg"  width="187" height="102"/>
+            <img src="10form/pic1.jpg" width="187" height="102" />
+            <img src="10form/1.jpg" width="187" height="102" />
+            <img src="10form/pic4.png" width="187" height="102" />
+            <img src="10form/pic6.jpg" width="187" height="102" />
+        </marquee>
+
+        <hr align="center" width="100%" size="4" color="#3d5c5c" />
+</div>
+    </center>
+
+
+
+
+
+
+   <script>
+
+
+       function signin() {
+           document.getElementById("myAudio").play();
+           document.getElementById("grey").style.display = "block";
+
+       }
+
+       function exitSignup() {
+           document.getElementById("myAudioExit").play();
+           document.getElementById("grey").style.display = "none";
+       }
+
+
+       function sub() {
+           document.getElementById("subme").play();
+           alert("כעת אתה מחובר לאתר!");
+            document.getElementById("grey").style.display="none"
+       }
+
+
+       function show() {
+           var x = document.getElementById("name");
+           var y = document.getElementById("pass");
+           if (y.type === "password") {
+               y.type = "text";
+           }
+           else {
+               y.type = "password";
+           }
+
+           if (y.type === "password") {
+               x.innerHTML = "הצג";
+           }
+           else {
+               x.innerHTML = "הסתר";
+           }
+       }
+           
+
+       function show1() {
+           var y = document.getElementById("pass1");
+           var x = document.getElementById("name1");
+           if (y.type === "password") {
+               y.type = "text";
+           }
+           else {
+               y.type = "password";
+           }
+           if (y.type === "password") {
+               x.innerHTML = "הצג";
+           }
+           else {
+               x.innerHTML = "הסתר";
+           }
+       }
+
+       function big() { //מתנהג כמו מקטע עצמאי עם רווח מלעלה ולמטה ונמצא באותה שורה ,כלומר לא יורד שורה
+           document.getElementById("boo").style.display = "inline-block";
+       }
+
+       function small() {
+           document.getElementById("boo").style.display = "none";
+       }
+
+       function big1() {
+           document.getElementById("boo1").style.display = "inline-block";
+       }
+
+       function small1() {
+           document.getElementById("boo1").style.display = "none";
+       }
+
+       function big2() {
+           document.getElementById("boo2").style.display = "inline-block";
+       }
+
+       function small2() {
+           document.getElementById("boo2").style.display = "none";
+       }
+
+       function male() {
+           document.getElementById("gender").src = "10form/male.png";
+       }
+
+       function female() {
+           document.getElementById("gender").src = "10form/female.png";
+       }
+
+       function other() {
+           document.getElementById("gender").src = "10form/other.png";
+       }
+
+       function private() {
+       document.getElementById("pri").style.display="block";
+   }
+
+   function exitPrivate() {
+        document.getElementById("myAudioExit").play();
+       document.getElementById("pri").style.display = "none"
+      
+   }
+
+
+    function stopThis() {
+       document.getElementById("stopMe").stop();
+   }
+        function code() {
+       if (document.getElementById("myInput").value === "W68HP") {
+           alert("הקוד אושר\nהבדיקה אומתה ");
+           document.getElementById("subme").play();
+
+       }
+       else {
+           document.getElementById("myInput").value = "";
+           document.getElementById("wrong").play();
+       }
+   }
+
+   
+
+
+   function keepThis() {
+       document.getElementById("stopMe").start();
+   }
+
+   function star0() {
+       document.getElementById("reset").play();
+       document.getElementById("star").src = "10form/stars0.png";
+   }
+
+   function star1() {
+       document.getElementById("rate").play();
+       document.getElementById("star").src = "10form/stars1.png";
+   }
+
+   function star2() {
+       document.getElementById("rate").play();
+       document.getElementById("star").src = "10form/stars2.png";
+   }
+
+   function star3() {
+       document.getElementById("rate").play();
+       document.getElementById("star").src = "10form/stars3.png";
+   }
+
+   function star4() {
+       document.getElementById("rate").play();
+       document.getElementById("star").src = "10form/stars4.png";
+   }
+
+   function star5() {
+       document.getElementById("rate").play();
+       document.getElementById("star").src = "10form/stars5.png";
+
+   }
+
+
+   function youWon1() {
+     document.getElementById("tada").play();
+        document.getElementById("pine").style.display ="block";
+   }
+   function youWon2() {
+       document.getElementById("tada").play();
+       document.getElementById("fly").style.display = "block";
+   }
+   function youWon3() {
+       document.getElementById("tada").play();
+       document.getElementById("pop").style.display = "block";
+   }
+   function youWon4() {
+       document.getElementById("tada").play();
+       document.getElementById("money").style.display = "block";
+   }
+   function youWon5() {
+       document.getElementById("tada").play();
+       document.getElementById("heli").style.display = "block";
+   }
+
+
+   function takeThePrize1() {
+       document.getElementById("closegalgal").style.display = "none";
+        document.getElementById("pine").style.display="none";
+    }
+
+      function takeThePrize2() {
+        document.getElementById("closegalgal").style.display = "none";
+        document.getElementById("fly").style.display="none";
+    }
+
+      function takeThePrize3() {
+          document.getElementById("closegalgal").style.display = "none";
+            document.getElementById("pop").style.display="none";
+    }
+
+      function takeThePrize4() {
+            document.getElementById("closegalgal").style.display ="none";
+            document.getElementById("money").style.display="none";
+    }
+
+      function takeThePrize5() {
+          document.getElementById("closegalgal").style.display = "none";
+        document.getElementById("heli").style.display="none";
+    }
+
+
+
+   function like() {
+       var x = document.getElementById("love");
+       document.getElementById("hate").src = "10form/dislike.png";
+       if (x.src.match("like.png")) {
+           x.src = "10form/liked.png";
+       } else {
+           x.src = "10form/like.png";
+       }
+   }
+
+ 
+
+   function dislike() {
+       var x = document.getElementById("hate");
+       document.getElementById("love").src = "10form/like.png";
+       if (x.src.match("dislike.png")) {
+           x.src = "10form/disliked.png";
+       } else {
+           x.src = "10form/dislike.png";
+       }
+   }
+
+
+
+
+   function like2() {
+       var x = document.getElementById("love2");
+       document.getElementById("hate2").src = "10form/dislike.png";
+       if (x.src.match("like.png")) {
+           x.src = "10form/liked.png";
+       } else {
+           x.src = "10form/like.png";
+       }
+   }
+
+
+   function dislike2() {
+       var x = document.getElementById("hate2");
+       document.getElementById("love2").src = "10form/like.png";
+       if (x.src.match("dislike.png")) {
+           x.src = "10form/disliked.png";
+       } else {
+           x.src = "10form/dislike.png";
+       }
+   }
+
+
+   function like3() {
+       var x = document.getElementById("love3");
+        document.getElementById("hate3").src = "10form/dislike.png";
+       if (x.src.match("like.png")) {
+           x.src = "10form/liked.png";
+       } else {
+           x.src = "10form/like.png";
+       }
+   }
+
+
+   function dislike3() {
+       var x = document.getElementById("hate3");
+        document.getElementById("love3").src = "10form/like.png";
+       if (x.src.match("dislike.png")) {
+           x.src = "10form/disliked.png";
+       } else {
+           x.src = "10form/dislike.png";
+       }
+
+   }
+
+      function like4() {
+       var x = document.getElementById("love4");
+       document.getElementById("hate4").src = "10form/dislike.png";
+       if (x.src.match("like.png")) {
+           x.src = "10form/liked.png";
+       } else {
+           x.src = "10form/like.png";
+       }
+   }
+
+
+
+   function dislike4() {
+       var x = document.getElementById("hate4");
+       document.getElementById("love4").src = "10form/like.png";
+       if (x.src.match("dislike.png")) {
+           x.src = "10form/disliked.png";
+       } else {
+           x.src = "10form/dislike.png";
+       }
+   }
+
+
+   function userName() { //שלום אייל מהעתיד . אני ממליץ לך להשתמש בטושים וצייר X Y כדי שטניה והאחרים יבינו
+       var x = document.getElementById("cinoy").value;
+       var y = document.getElementById("area").value;
+       var z = document.getElementById("yourImage").src;
+
+       document.getElementById("area").value = "";
+       document.getElementById("disappear").style.display = "none"
+       document.getElementById("comment").style.display = "block";
+
+       document.getElementById("username").innerHTML = x;
+       document.getElementById("yourComment").innerHTML = y;
+       document.getElementById("profile").src = z;
+     
+
+   }
+
+
+   function ninja() {
+       document.getElementById("yourImage").src = "10form/ninja.png";
+   }
+
+   function god() {
+       document.getElementById("yourImage").src = "10form/god.png";
+   }
+
+   function dog() {
+       document.getElementById("yourImage").src = "10form/dog.png";
+   }
+
+
+   function heart() {
+       document.getElementById("yourImage").src = "10form/heart.png";
+   }
+
+   function alien() {
+       document.getElementById("yourImage").src = "10form/alien.png";
+   }
+
+   function girl() {
+       document.getElementById("yourImage").src = "10form/girl.png";
+   }
+
+   function boy() {
+       document.getElementById("yourImage").src = "10form/boy.png";
+   }
+
+   function clown() {
+       document.getElementById("yourImage").src = "10form/clown.png";
+   }
+
+   function gamer() {
+       document.getElementById("yourImage").src = "10form/gamer.png";
+   }
+
+
+
+</script>
+
+
+</body>
+</html>

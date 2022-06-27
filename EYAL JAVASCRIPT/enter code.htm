@@ -1,0 +1,600 @@
+﻿
+<head>
+    <title>INPUT</title>
+<style>
+     
+.text
+{
+    border-color:#F0F8FF #F0F8FF black #F0F8FF;
+    border-style:solid;
+    border-width:2px;
+    background:#F0F8FF;
+}
+  
+
+
+.rugo
+{
+    border-radius:20px; 
+    border:1px solid #333333; ; 
+    position:absolute;    
+}
+
+.rugo:hover
+{
+    cursor:pointer;
+}
+ .grey {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    display:none;
+    background-color:rgba(13, 13, 13, 0.7);
+    position: fixed;
+
+    }   
+    
+.miniform
+{
+    margin: 5% auto;
+    background-color:white;
+    font-size:25px;
+    padding:20px; 
+    width:30%; 
+}
+
+.close {
+    position: absolute;
+    font-size: 40px;
+    color: #000d1a;
+    
+}
+
+.close:hover {
+    color: #D91E18;
+    cursor:pointer;
+    
+}
+
+.colect
+{
+    padding:10px;
+    background:#00b300;
+    color:White;
+    border:none;
+    border-right:3px solid #004d00;
+    border-bottom:4px solid #004d00;    
+}
+
+.colect:hover
+{
+    cursor:pointer;
+}
+
+.mes
+{
+    background-color:white;
+    padding:10px 8px;
+    margin: 5% auto;
+    width:50%;
+    border:1px solid black;
+    height:430px;
+    overflow:scroll;
+}
+
+
+
+
+.block
+{
+    background-color:#F2F1EF;
+    margin: 10px;
+    width:95%;
+    padding:15px 13px;
+    height:auto;
+
+}  
+  
+.user
+{
+    background-color:#6C7A89;
+    width:135px;
+    padding:5px;
+}
+
+.user1
+{
+    background-color:#6C7A89;
+    width:120px;
+    padding:5px;
+}
+
+.write
+{
+    background-color:#dbdbdb;
+    font-family:Gisha;
+    width:80%;
+    padding:8px;
+    line-height:1.7;
+
+}
+
+.center
+{
+    margin-bottom:10px;
+}
+
+.love:hover
+{
+    cursor:pointer;
+}
+
+.hate:hover
+{
+    cursor:pointer;
+}
+</style>
+</head>
+<body dir="rtl" bgcolor="#F0F8FF">
+
+<audio id="tada">
+    <source src="code/tada.mp3" type="audio/mp3">
+</audio>
+<h1>בדיקה</h1>
+כתוב את הקוד כאן:<br />
+ <input type="text" id="myInput"  class="text" >
+<img src="code/code.gif" width="200" hspace="30" style="border:2px outset #75a3a3; position:absolute;" />
+<br><br>
+<button class="rugo" type="button" onclick="code()" class="send">שלח</button>
+
+<Br /><br />
+<h1>הכנס כאן סיסמא</h1>
+<input type="password" id="change"  class="text" >
+
+<span onclick="read()">
+<button class="rugo" type="button" onclick="show()" style=" margin-right:5px;"><span id="name">הצג</span></button></span>
+
+<br /><br /><br /><br /><br />
+
+
+
+
+
+<div id="closeme"> 
+
+
+
+
+
+<center>
+<img src="code/ar.jpg" width="70" height="120" />
+</center>
+<br />
+
+ 
+  
+  <div style="width:100%; background:black; height:auto;"  >
+ <marquee id="stopMe" scrollamount="500" width="100%" behavior="scroll" loop="infinite >
+
+         <input type="image" src="code/ar.png" לא עובד onclick="signup()"/>
+
+         <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/pop1.png" width="270" height="151" onclick="document.getElementById('pop').style.display = 'block'"/></span>
+
+       <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/pineapplebox.png" width="270" height="151" onclick="document.getElementById('pine').style.display = 'block'"/></span>
+
+       <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/flycard.png" width="270" height="151" onclick="document.getElementById('fly').style.display = 'block'"/></span>
+
+
+   <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/brokoli.png" width="270" height="151" onclick="document.getElementById('bro').style.display = 'block'"/>/</span>
+
+     
+  <span onclick="document.getElementById('tada').play()">
+          <input type="image" src="code/money.png"width="270" height="151" onclick="document.getElementById('money').style.display = 'block'"/></span>
+
+              <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/pop1.png" width="270" height="151" onclick="document.getElementById('pop').style.display = 'block'"/></span>
+
+       <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/pineapplebox.png" width="270" height="151" onclick="document.getElementById('pine').style.display = 'block'"/></span>
+
+       <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/flycard.png" width="270" height="151" onclick="document.getElementById('fly').style.display = 'block'"/></span>
+
+
+   <span onclick="document.getElementById('tada').play()">
+       <input type="image" src="code/brokoli.png" width="270" height="151" onclick="document.getElementById('bro').style.display = 'block'"/>/</span>
+
+     
+  <span onclick="document.getElementById('tada').play()">
+          <input type="image" src="code/money.png"width="270" height="151" onclick="document.getElementById('money').style.display = 'block'"/></span>
+
+
+
+
+
+    
+          
+        </marquee>
+        </div>
+        
+        
+        
+        <br /><br /><br /><br /><br /><br />
+       <center>
+
+       <button class="rugo"type="button" onclick="stopThis()">עצור</button><br /><br />
+       <button class="rugo" type="button" onclick="keepThis()">המשך</button><br /><br />
+       </center>
+       
+       
+       
+       </div>
+
+
+
+       <br /><br /><br /><br />
+
+       
+<div class="grey" id="pine">
+
+<div class="miniform">
+
+<b><span class="close" onclick="document.getElementById('pine').style.display='none'">&times</span></b>
+
+<center>
+<u><h1><font face="gisha">זכית ב...</font></h1></u>
+<font face="narkisim" size="6">
+קופסת שימורי אננס!
+<br /><br />
+<img src="code/pineapple.jpg" width="120" height="140" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+<span onclick="document.getElementById('closeme').style.display ='none'">
+<button class="colect" onclick="document.getElementById('pine').style.display='none'"><b><font face="gisha" size="6">אסוף פרס</font></b></button></span>
+</font>
+</center>
+
+</div>
+
+</div>
+
+
+<div class="grey" id="fly">
+
+<div class="miniform">
+
+<b><span class="close" onclick="document.getElementById('fly').style.display='none'">&times</span></b>
+
+<center>
+<u><h1><font face="gisha">זכית ב...</font></h1></u>
+<font face="narkisim" size="6">
+כרטיסים להופעה של עומר אדם!
+<br /><br />
+<img src="code/fly.png" width="150" height="150" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+<span onclick="document.getElementById('closeme').style.display ='none'">
+<button class="colect" onclick="document.getElementById('fly').style.display='none'"><b><font face="gisha" size="6">אסוף פרס</font></b></button></span>
+</font>
+</center>
+
+</div>
+
+</div>
+
+<div class="grey" id="pop">
+
+<div class="miniform">
+
+<b><span class="close" onclick="document.getElementById('pop').style.display='none'">&times</span></b>
+
+<center>
+<u><h1><font face="gisha">זכית ב...</font></h1></u>
+<font face="narkisim" size="6">
+בובת פופ של ריק!
+<br /><br />
+<img src="code/pop.jpeg" width="180" height="180" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+<span onclick="document.getElementById('closeme').style.display ='none'">
+<button class="colect" onclick="document.getElementById('pop').style.display='none'"><b><font face="gisha" size="6">אסוף פרס</font></b></button></span>
+</font>
+</center>
+
+</div>
+
+</div>
+
+
+<div class="grey" id="money">
+
+<div class="miniform">
+
+<b><span class="close" onclick="document.getElementById('money').style.display='none'">&times</span></b>
+
+<center>
+<u><h1><font face="gisha">זכית ב...</font></h1></u>
+<font face="narkisim" size="6">
+1000 ש"ח לבזבוזים
+<br /><br />
+<img src="code/money1.png" width="180" height="120" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+<span onclick="document.getElementById('closeme').style.display ='none'">
+<button class="colect" onclick="document.getElementById('money').style.display='none'"><b><font face="gisha" size="6">אסוף פרס</font></b></button></span>
+</font>
+</center>
+
+</div>
+
+</div>
+
+
+
+
+<div class="grey" id="bro">
+
+<div class="miniform">
+
+<b><span class="close" onclick="document.getElementById('bro').style.display='none'">&times</span></b>
+
+<center>
+<u><h1><font face="gisha">זכית ב...</font></h1></u>
+<font face="narkisim" size="6">
+אספקת ברוקולי לכל החיים!
+<br /><br />
+<img src="code/broko.jpg" width="140" height="140" style="margin-right:15px; margin-bottom:10px;" />
+<br />
+<span onclick="document.getElementById('closeme').style.display ='none'">
+<button class="colect" onclick="document.getElementById('bro').style.display='none'"><b><font face="gisha" size="6">אסוף פרס</font></b></button></span>
+</font>
+</center>
+
+</div>
+
+</div>
+
+
+<br /><br /><br /><br />
+<center><font color="grey"><textarea rows="8" cols="100" maxlengt="80" id="useme" style="resize:none;">כתוב תגובה כאן....</textarea></font>
+<br />
+<span onclick="dis()">
+<span onclick="up()">
+<button type="button" id="disappear" onclick="sent()">הגב</button></span></span>
+<br /><br /><br /><br />
+
+
+</center>
+
+<div class="mes">
+<div class="block" id="commet" style="display:none;">
+<div class="user">
+<img src="code/mar.png" style="border-radius:40%;"width="40" height="40"/>
+
+<span style=" vertical-align:10px; margin-right:4px;"><b>eyal2004</b></span>
+</div>
+
+<br /><br />
+
+<div id="here" class="write">   </div>
+
+<table cellpadding="4" style="margin-right:88%;">
+
+<tr>
+<td><span onclick=" changelike()"><img class="love" id="love"  src="code/like.png" width="20" height="20" onclick="like()" style="margin-bottom:13px;"/></span></td>
+<td ><span onclick=" changedislike()"> <img class="hate" id="hate"  src="code/dislike.png" width="20" height="20"  onclick="dislike()"/></span> </td>
+  
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="block">
+<div class="user">
+<img src="code/pro1.png" width="40" height="40"/>
+
+<span style=" vertical-align:10px; margin-right:4px;"><b>חתול מסטול</b></span>
+</div>
+
+<br /><br />
+
+<div  class="write">לא עובדת לי הסיסמא והשם משתמש. הכנסתי אותם ולחצתי "שלח" אבל לא קרה כלום ): <br />נ.ב  - אהבתי את העבודה שלך  ממש ,ואני מקווה שתצליח בה!</div>
+
+
+<table cellpadding="4" style="margin-right:88%;">
+
+<tr>
+<td><span onclick=" mychangelike()"><img class="love" id="mylove"  src="code/like.png" width="20" height="20" onclick="mylike()" style="margin-bottom:13px;"/></span></td>
+<td ><span onclick=" mychangedislike()"> <img class="hate" id="myhate"  src="code/dislike.png" width="20" height="20"  onclick="mydislike()"/></span> </td>
+  
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="block">
+<div class="user">
+<img src="code/bomb.png" width="40" height="40"/>
+
+
+<span style=" vertical-align:10px; margin-right:4px;"><b>ירין הדוקר</b></span>
+</div>
+
+<br /><br />
+
+<div  class="write">אהבתי את העיצוב של כל האתרים, ואת כל האלגנטיות שיש בהם. לדעתי זוהי אחת העבודות היפות שנתקלתי בהן. יש לי שאלה:איך אפשר להשתמש בjava script? <br /> אשמח אם תענה לי(:</div>
+
+<table cellpadding="4" style="margin-right:88%;">
+
+<tr>
+<td><span onclick=" lastchangelike()"><img class="love" id="lastlove"  src="code/like.png" width="20" height="20" onclick="lastlike()" style="margin-bottom:13px;"/></span></td>
+<td ><span onclick=" lastchangedislike()"> <img class="hate" id="lasthate"  src="code/dislike.png" width="20" height="20"  onclick="lastdislike()"/></span> </td>
+  
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+      function code() {
+        if (document.getElementById("myInput").value === "W6 8HP") {
+            alert("הקוד אושר\nהבדיקה אומתה ");
+        }
+        else {
+            document.getElementById("myInput").value = "";
+        }
+    }
+
+    function show() {
+        var y = document.getElementById("change");
+        if (y.type === "password") {
+            y.type = "text";
+        }
+        else {
+            y.type = "password";
+        }
+    }
+
+
+    function read() {
+        var z = document.getElementById("change");
+        var x = document.getElementById("name");
+        if (z.type === "password") {
+            x.innerHTML = "הצג";
+        }
+        else {
+            x.innerHTML = "הסתר";
+        }
+    }
+
+    function stopThis() {
+        document.getElementById("stopMe").stop();
+    }
+
+
+    function keepThis() {
+    document.getElementById("stopMe").start();
+    }
+
+
+    function close() {
+    document.getElementById("closeme").style.display = "none";
+}
+
+
+
+function sent() {
+    var x = document.getElementById("useme").value;
+    document.getElementById("here").innerHTML = x;
+}
+
+    function messege() {
+        document.getElementById("useme").value = "";
+    
+}
+
+function like() {
+    var x = document.getElementById("love");
+    if (x.src.match("like.png")) {
+        x.src = "code/liked.png";
+    } else {
+        x.src = "code/like.png";
+    } 
+}
+
+function changelike() {
+     document.getElementById("hate").src="code/dislike.png";
+ }
+
+ function dislike() {
+     var x = document.getElementById("hate");
+     if (x.src.match("dislike.png")) {
+         x.src = "code/disliked.png";
+     } else {
+         x.src = "code/dislike.png";
+     }
+ }
+    function changedislike() {
+        document.getElementById("love").src="code/like.png";
+    }
+
+
+
+    function mylike() {
+        var x = document.getElementById("mylove");
+        if (x.src.match("like.png")) {
+            x.src = "code/liked.png";
+        } else {
+            x.src = "code/like.png";
+        }
+    }
+
+    function mychangelike() {
+        document.getElementById("myhate").src = "code/dislike.png";
+    }
+
+    function mydislike() {
+        var x = document.getElementById("myhate");
+        if (x.src.match("dislike.png")) {
+            x.src = "code/disliked.png";
+        } else {
+            x.src = "code/dislike.png";
+        }
+    }
+    function mychangedislike() {
+        document.getElementById("mylove").src = "code/like.png";
+    }
+
+    function lastlike() {
+        var x = document.getElementById("lastlove");
+        if (x.src.match("like.png")) {
+            x.src = "code/liked.png";
+        } else {
+            x.src = "code/like.png";
+        }
+    }
+
+    function lastchangelike() {
+        document.getElementById("lasthate").src = "code/dislike.png";
+    }
+
+    function lastdislike() {
+        var x = document.getElementById("lasthate");
+        if (x.src.match("dislike.png")) {
+            x.src = "code/disliked.png";
+        } else {
+            x.src = "code/dislike.png";
+        }
+    }
+    function lastchangedislike() {
+        document.getElementById("lastlove").src = "code/like.png";
+    }
+    function up() {
+        document.getElementById("commet").style.display="block";
+    }
+
+    function dis() {
+        document.getElementById("disappear").style.display = "none";
+    }
+</script>
+ 
+</body>
+</html>
+

@@ -1,0 +1,286 @@
+﻿body /*רקע ותמונה נגללת*/
+{
+    
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    
+}
+
+div.title   /*צבע תכלת ,גבול עגול בעובי 0.5 בצבע שחור, התרחקות משמאל ב10%, התרחקות מימן ב10%*/
+{             
+    background:radial-gradient(circle,#80ffff,#00b5ff);
+    border-radius:40px;
+    margin-left:10%;
+    margin-right:10%;
+    border:0.5px solid black;
+}
+.homepage     /*גודל כותרת על 60 וגופן גישה, צל*/
+ {
+    font-size:60;
+    font-family:Guttman Hatzvi;
+    color:white;
+   text-shadow:-3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+ul {     /*רקע כחול ,מרווח בגודל 1 , מוריד את הנקודה ,מה שנכנס נכנס*/
+    list-style-type:none;
+    overflow: hidden;
+    background-color:#1a53ff;
+    width:94%;
+    border:1.5px solid #004466;
+    padding:1px;
+    
+}
+
+li {   /*בצד ימין עם מסגרת בשמאל ,פונט בגדל 13*/
+    float: right;
+    border-left:1px solid #00b3b3;
+    font-size: 13px;
+   
+    
+         
+}
+
+li:last-child { /* לאלמנט האחרון לא תהיה מסגרת */
+    border-left:none;
+}
+        /*כאשר ישנה תגית a בתןך תגית li*/
+li a {  /*צורת בלוק מרווחת, צבע לבן, שינוי צורה ב0.4 שניות, ללא תבליט, מרווח התחון ועליון של 10,מרווח בצדדים של ,12,הטקסט ממוקם באמצע*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: 0.4s;
+    
+}
+     /*כאשר ישנה תגית a בתןך תגית li*/
+      /*כאשר העבר מרחף מעל הצבע משתנה .בנוסף לכך שינוי הצורה מתרחש ב0.4 שניות*/
+li a:hover:not(.active) {
+      background-color:#0d3d6e ;
+
+    
+}
+
+.active {
+    background-color: #002447;
+}
+
+
+.text 
+{
+    margin-right:160px;
+    margin-left:110px;
+    line-height:1.3;
+}
+
+.text1 
+{
+   margin: 0 10% auto;
+     line-height:1.3;
+}
+
+.left /*תמונה*/
+{
+    border:4px outset #7da5b5; 
+    border-radius:20px;
+    
+  
+}
+.right {
+    border:4px outset #bbff33; 
+    border-radius:20px;   
+}
+
+img.titleright
+{
+    border-radius:10px;
+    box-shadow: 2px 2px 10px grey;
+    margin-top:20px;
+    margin-right:20px;
+}
+
+img.titleleft
+{
+    border-radius:10px;
+    box-shadow: -2px 2px 10px grey;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+
+hr.sep 
+{
+    margin-bottom:20px;
+    margin-right:85px;
+    border-radius:10px;
+    border:1px outset #aa80ff;
+    
+}
+
+
+.plot
+{
+    font-size:30px;
+    font-width:bold;
+    margin-right:80px;
+    background-color:white;
+    display:inline-block;
+    font-family:Guttman Hatzvi;
+    padding:10px; 
+    text-shadow:2px 2px 5px grey;
+    border-radius:20px;
+}
+  
+
+
+
+
+
+img.giff
+{
+    width:100px;
+    height:70px;
+    margin-left:200px;
+    float:left;
+    border-radius:20px;
+    border-style:groove;
+    border-style-color:#000000;
+    
+}     
+
+
+img.pic1
+{
+    margin-right:10px;
+    border:2px inset  #333333 ;
+    border-radius:10px;
+    float:right;
+    
+}
+
+
+img.pic2
+{
+    float:left;
+    margin-left:10px;
+    border:2px inset  #333333 ;
+    border-radius:10px;
+    
+}
+
+
+.misgeret 
+{
+    background:url("1homepage/white.jpg");
+    border-radius:10px;
+    border: 4px outset #ffa64d;
+    overflow:hidden;
+    padding:5px;
+}
+
+
+.misgeret1 
+{
+    background:url(1homepage/white.jpg);
+    border-radius:10px;
+    width:auto;
+    height:auto;
+    border: 4px outset slateblue;
+    overflow:hidden;
+    padding:5px;
+}
+
+
+div.bor
+{
+    border-top:3px dotted black;
+   margin:0 10% auto;
+}
+
+
+ 
+
+
+div.monolo 
+{
+    background:	#F5FFFA;
+    margin:0 8%;
+    font-size:20px;
+    width:400px;
+    text-align:center;
+    border-left:2px solid #7B68EE;
+    border-right:2px solid #7B68EE;
+    padding:5px;
+}
+
+
+.miniplot
+{
+    margin:0 10%;
+    font-family:Guttman Yad-Brush;
+    font-size:20px;
+    font-width:bold;
+    background:lightyellow;
+    width:130px;
+    padding:5px;
+    border-radius:5px;
+}
+
+
+table
+{
+    background:url("1homepage/tablebackground.png");
+    border-radius:3px;
+    border-style:outset;
+   
+}
+
+video
+{
+    height:auto;
+    width:80%;
+}
+
+
+
+.number {
+    display: inline-block;
+}
+
+.number a {
+    color: black;
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid 	#F0F8FF;
+    background:	#4682B4;
+
+}
+
+.number a.active {
+    background-color: #0b275b;
+    color: white;
+    border: 1px solid #0b275b;
+}
+
+.number a:hover:not(.active) 
+{
+    background-color: #ddd;
+    }
+
+.number a:last-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.number a:first-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mark
+{
+    background-color:#ccffff;
+}
+    
+    

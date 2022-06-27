@@ -1,0 +1,106 @@
+﻿<html>
+<head>
+<title>JAVA SCRIPT</title>
+<style>
+    
+.starstyle
+{
+    display:inline-block;
+    border-radius:20px;
+    background:white;
+    border:0.3px solid black;
+    margin-top:10px;
+    margin-right:5px;
+    font-size:20px;
+}
+
+
+.reset
+{
+    display:inline-block;
+    border-radius:10px;
+    background:white;
+    border:0.3px solid black;
+    font-size:20px;
+    padding:6px;
+}
+
+</style>
+</head>
+
+
+
+
+<body bgcolor="#F0F8FF" dir="rtl">
+
+<audio id="rate">
+    <source src="stars/rate.mp3" type="audio/mp3">
+</audio>
+
+<audio id="reset">
+    <source src="stars/reset.mp3" type="audio/mp3">
+</audio>
+
+<center>
+<br /><br /><br />
+<h1>דרג מ-1 עד 5 את האתר כולו</h1>
+<span onclick="audio()">
+<button type="button" class="starstyle" onclick="star5()"><b>5</b></button></span>
+<span onclick="audio()">
+<button type="button" class="starstyle" onclick="star4()"><b>4</b></button></span>
+<span onclick="audio()">
+<button type="button" class="starstyle" onclick="star3()"><b>3</b></button></span>
+<span onclick="audio()">
+<button type="button" class="starstyle" onclick="star2()"><b>2</b></button></span>
+<span onclick="audio()">
+<button type="button" class="starstyle" onclick="star1()"><b>1</b></button></span>
+
+
+<input type="range" />
+
+
+<br /><br />
+<img src="stars/stars0.jpg" style="width:200px;" id="star"/>
+
+<br /><br />
+<span onclick="audio2()">
+<button type="button" class="reset" onclick="star0()">אפס כוכבים</button></span>
+</center>
+
+<script>
+
+    function star0() {
+        document.getElementById("star").src = "stars/stars0.jpg";
+    }
+
+    function star1() {
+        document.getElementById("star").src = "stars/stars1.jpg";
+    }
+
+    function star2() {
+        document.getElementById("star").src = "stars/stars2.jpg";
+    }
+
+    function star3() {
+        document.getElementById("star").src = "stars/stars3.jpg";
+    }
+
+    function star4() {
+        document.getElementById("star").src = "stars/stars4.jpg";
+    }
+
+    function star5() {
+        document.getElementById("star").src = "stars/stars5.jpg";
+    }
+
+    function audio() {
+        document.getElementById("rate").play();
+    }
+
+    function audio2() {
+        document.getElementById("reset").play();
+    }
+</script>
+
+</body>
+</html>
